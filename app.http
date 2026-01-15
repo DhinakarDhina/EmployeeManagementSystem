@@ -1,0 +1,43 @@
+GET http://localhost:3000/candidates/
+
+###
+
+GET http://localhost:3000/candidates/7/
+
+###
+
+POST http://localhost:3000/candidates/
+Content-Type : application/json
+
+
+{
+  "first_name": "Gokul",
+  "last_name": "Dhina",
+  "email": "Gokul.Dhina@example.com",
+  "phone_number": "9871231230",
+  "position_applied_for": "ML Engineer",
+  "status": "Hired",
+  "application_date": "2025-11-14",
+  "updated_at": "2025-11-14"
+}
+
+###
+PUT http://localhost:3000/candidates/4/
+Content-Type : application/json
+
+{
+  "first_name": "Gokul",
+  "last_name": "Dhina",
+  "email": "Gokul.Dhina@example.com",
+  "phone_number": "9849875330",
+  "position_applied_for": "ML Engineer",
+  "status": "Applied",
+  "application_date": "2025-11-17",
+  "updated_at": "2025-11-17"
+}
+
+###
+DELETE http://localhost:3000/candidates/20/
+
+###
+GET http://localhost:3000/candidates/status/Hired
